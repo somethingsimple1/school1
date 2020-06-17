@@ -10,12 +10,12 @@ def welcome(): #welcoming the user in to the game 3
     ask_name = 'placeholder'
     global name
     print('Welcome to my guessing game.')
-    name = "placeholder"
+   
 
 
 
 
-    while ask_name is not ('yes', 'no'):
+    while ask_name != ('yes', 'no'):
         try:
             name = input('What do you want your name to be? : ')
             ask_name = input('Do you want "{}" to be your name. yes or no : '.format(name))
@@ -43,7 +43,7 @@ def pick_levels():
     global max #the max number
     global int_random # the random number
 
-    while level is not ('easy', 'medium', 'hard'):  # using the wihle loop so the code stays here untill it is meet
+    while level != ('easy', 'medium', 'hard'):  # using the wihle loop so the code stays here untill it is meet
         try:  # try to try the code and if something worng it gose to except and prints and error then loops
 
             print('')
@@ -83,14 +83,6 @@ def pick_levels():
 
         except ValueError: # if it finds somethig worng with the code upbove it goes here and tells me the somthing is worng / didn't work and loops
             print('That is not option. Please try something else.')
-
-
-
-
-
-
-
-
 
 
 def main_code(): #the game
@@ -143,17 +135,10 @@ def main_code(): #the game
             guess_list.pop() #
 
 
-
-
-
-
-
-
-
 def play_again(): #ask the user if they want to play again
         ask_play = "placeholder"
 
-        while ask_play is not ('yes', 'no'):
+        while ask_play != ('yes', 'no'):
             try:
                 ask_play = input('Do you want to play again {}? yes or no : '.format(name))
                 ask_play = str(ask_play)
