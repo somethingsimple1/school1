@@ -8,7 +8,7 @@ print('game 4 : placeholder')
 print('game 5 : placeholder')
 print('-----------------------')
 
-game = input('what game do you want to play')
+game = input('what game do you want to play : ')
 
 WhatGame = '1', 'game 1', 'guessing game', '2', 'game 2', 'sanke'
 Game1 = 'game1', '1', 'guessing game'
@@ -38,6 +38,9 @@ while game != (WhatGame):
             
             elif game == Game5:
               print(game)
+            
+            else:
+             print('not working')
 
         except ValueError:
           print('error')
