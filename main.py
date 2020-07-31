@@ -1,3 +1,18 @@
+import subprocess
+from subprocess import call
+
+
+class CallPy(object):
+    def __init__(self, path='games'):
+        self.path = path
+
+    def call_python_file(self):
+        call(["python3", "{}".format(self.path)])
+
+
+if __name__ == "main":
+    c = CallPy
+    c.call_python_file()
 
 print('-----------------------')
 print('These are the games')
@@ -21,7 +36,7 @@ Game5 = 'game5', '5',
 
 
 
-while game != (WhatGame):
+"""while game != (WhatGame):
         try:
 
             if  game == Game1:
@@ -43,7 +58,7 @@ while game != (WhatGame):
              print('not working')
 
         except ValueError:
-          print('error')
+          print('error')"""
 
 
 
