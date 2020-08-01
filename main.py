@@ -1,20 +1,8 @@
-import subprocess
-from subprocess import call
 
+import os 
 
-class CallPy(object):
-    def __init__(self, path='.\games'):
-        self.path = path
+os.system('python games/GuessingGame.py')
 
-    def call_python_file(self):
-        call(["python3", "{}".format(self.path)])
-
-
-if __name__ == "main":
-    c = CallPy()
-    c.call_python_file()
-
-print("hello")
 
 
 
