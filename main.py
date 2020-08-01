@@ -2,7 +2,7 @@ import os
 from tkinter import * 
 root = Tk()
 
-def Guessing_game() 
+def Guessing_game:
   os.system('python games/GuessingGame.py')
 
 
