@@ -3,7 +3,7 @@ from subprocess import call
 
 
 class CallPy(object):
-    def __init__(self, path='games'):
+    def __init__(self, path='.\games'):
         self.path = path
 
     def call_python_file(self):
@@ -11,10 +11,15 @@ class CallPy(object):
 
 
 if __name__ == "main":
-    c = CallPy
+    c = CallPy()
     c.call_python_file()
 
-print('-----------------------')
+print("hello")
+
+
+
+
+"""print('-----------------------')
 print('These are the games')
 print('game 1 : guessing game')
 print('game 2 : placeholder')
@@ -30,12 +35,7 @@ Game1 = 'game1', '1', 'guessing game'
 Game2 = 'game2', '2',
 Game3 = 'game3', '3',
 Game4 = 'game4', '4',
-Game5 = 'game5', '5',
-
-
-
-
-
+Game5 = 'game5', '5',"""
 """while game != (WhatGame):
         try:
 
@@ -59,6 +59,3 @@ Game5 = 'game5', '5',
 
         except ValueError:
           print('error')"""
-
-
-
