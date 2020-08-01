@@ -1,50 +1,50 @@
 import os 
+from tkinter import * 
+root = Tk()
+
+def Guessing_game
+  os.system('python games/GuessingGame.py')
+
+
+Button_Game1 = Button(root, text='Guessing game', command=Guessing_game )
+Button_Game2 = Button(root, text='snake', )
+Button_Game3 = Button(root, text='3', )
+Button_Game4 = Button(root, text='4', )
+Button_Game5 = Button(root, text='5', )
+
+Button_Game1.pack()
+Button_Game2.pack()
+Button_Game3.pack()
+Button_Game4.pack()
+Button_Game5.pack()
 
 
 
-
-
-
-print('-----------------------')
-print('These are the games')
-print('game 1 : guessing game')
-print('game 2 : placeholder')
-print('game 3 : placeholder')
-print('game 4 : placeholder')
-print('game 5 : placeholder')
-print('-----------------------')
-
-game = input('what game do you want to play : ')
-
-Games = {
-Game1 : {'game1', '1', 'guessing game'},
-Game2 : {'game2', '2',},
-Game3 : {'game3', '3',},
-Game4 : {'game4', '4',},
-Game5 : {'game5', '5',},
+#the dictionary of all 5 games 
+Dic_Games = { 
+'Game1' : {'game1', '1', 'guessing game'},
+'Game2' : {'game2', '2', 'snake'},
+'Game3' : {'game3', '3',},
+'Game4' : {'game4', '4',},
+'Game5' : {'game5', '5',}
 }
 
 
-"""while game != (WhatGame):
-        try:
 
-            if  game == Game1:
-                print(game)
 
-            elif game == Game2:
-              print(game)
 
-            elif game  == Game3:
-              print(game)
 
-            elif game == Game4:
-              print(game)
-            
-            elif game == Game5:
-              print(game)
-            
-            else:
-             print('not working')
 
-        except ValueError:
-          print('error')"""
+
+
+
+
+
+
+
+
+root.mainloop() #main loop 
+
+
+
+
