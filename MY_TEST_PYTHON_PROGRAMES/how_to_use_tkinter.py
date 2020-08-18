@@ -36,10 +36,10 @@ def myclick():
 
 #making a button 
 #use 'pady' and 'payx' to add padding to the button 
-mybutton = Button(root, text='click me', padx=50, command=myclick, fg='blue', bg='#00000')
+mybutton = Button(root, text='click me', padx=50, command=myclick, fg='blue')
 
 #packing the Widgets on screen 
-mybutton.pack() 
+mybutton.pack()
 
 
 
