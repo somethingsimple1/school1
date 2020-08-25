@@ -11,13 +11,15 @@ if __name__ == "__main__":
   root = tk.Tk()
   root.title("My Games")
 
+  #adding the canvas to the main window 
   canvas = canvas.Master(root)
   canvas.grid(column=1, row=0, rowspan=3)
 
 
   
   #making the frame called "label" 
-  label = tk.Frame(root, width=35, height=240, padx=constants.layout["pad_x"], pady=constants.layout["pad_y"])
+  label = tk.Frame(root, width=constants.layout["width"], height=constants.layout["height"], padx=constants.layout["pad_x"], pady=constants.layout["pad_y"])
+
 
   #making the label and adding them to the frame 
   tk.Label(label, text="Pick the game you want to play.").grid()
@@ -29,7 +31,7 @@ if __name__ == "__main__":
     
 
   #making the frame calleed "buttons"
-  buttons = tk.Frame(root, width=35, height=240, padx=constants.layout["pad_x"], pady=constants.layout["pad_y"])
+  buttons = tk.Frame(root, width=constants.layout["width"], height=constants.layout["height"], padx=constants.layout["pad_x"], pady=constants.layout["pad_y"])
 
   #making the buttons and adding them to the frame 
   tk.Button(buttons, text='Guessing game').grid()
