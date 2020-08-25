@@ -1,4 +1,4 @@
-#this is a guessing game that I made before 
+#this is a guessing game that I made before
 import time
 import random
 import string
@@ -158,4 +158,3 @@ def play_again(): #ask the user if they want to play again
 
 
 
-welcome() #takes the user to the start of the program
