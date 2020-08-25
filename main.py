@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import * 
 from Games.Guessing import welcome 
 import constants
-
+import canvas
 
 
 
@@ -10,6 +10,10 @@ if __name__ == "__main__":
   #making the gui 
   root = tk.Tk()
   root.title("My Games")
+
+  canvas = canvas.Master(root)
+  canvas.grid(column=1, row=0, rowspan=3)
+
 
   
   #making the frame called "label" 
@@ -25,7 +29,7 @@ if __name__ == "__main__":
     
 
   #making the frame calleed "buttons"
-  buttons = tk.Frame(root, width=35, height=240)
+  buttons = tk.Frame(root, width=35, height=240, padx=constants.layout["pad_x"], pady=constants.layout["pad_y"])
 
   #making the buttons and adding them to the frame 
   tk.Button(buttons, text='Guessing game').grid()
@@ -36,7 +40,7 @@ if __name__ == "__main__":
   buttons.grid(column=0, row=1)
 
 
-  
+
 
   root.mainloop() 
 
