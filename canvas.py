@@ -6,8 +6,8 @@ import constants
 class Master(tk.Canvas):
 
   #making the canvas 
-  def __init__(self, b): 
-    super().__init__(b)
+  def __init__(self, boss): 
+    super().__init__(boss)
 
     #configuring the size and color of the canvas 
     self.configure(
@@ -15,3 +15,4 @@ class Master(tk.Canvas):
       height=constants.layout["canvas_size"],
       bg=constants.layout["background_color"]
     )
+
